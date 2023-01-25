@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.WorkAddDateFragment"
+>
+    <FrameLayout
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/lin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textMonth1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="อัตตราค่าจ้าง(ชำระโดยตรงที่คนดูแล)"
+                        android:textColor="@color/black"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textMonth2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ค่าจ้าง วันละ 700 บาท \nรวม 1 วัน คิดเป็นเงิน \n700 บาท"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textMonth3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="- ค่าอาหารวันละ 150 บาท ลูกค้าจ่ายโดยตรงกับคนดูแล หรือให้ลูกค้าเป็นผู้จัดหาอาหารให้กับคนดูแล \n- เวลาเริ่มงานสามารถกำหนดได้ตามที่ลูกค้าต้องการและตกลงกับคนดูแลได้ \n -กรณีคนดูแลไม่ได้พักอยู่กับผู้ป่วย/ผู้สูงอายุเนื่องจากความต้องการของลูกค้า จะมีค่าใช้จ่ายเพิ่มเติมโดยตกลงกันเอง (เช่นค่ารถหรือที่พัก)"
+                        android:textColor="@color/black"
+
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lineSlat"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/black" />
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/lin2"
+                    tools:layout_editor_absoluteX="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin1"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="รายวัน"
+                            android:textColor="@color/black"
+                            android:textSize="26dp" />
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkboxDay"
+
+                            android:buttonTint="#039BE5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/linDay1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@id/lin1">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="20dp">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="วันเริ่ม" />
+
+                                <EditText
+                                    android:id="@+id/edtStartDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="วันที่เริ่ม" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="20dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="วันเริ่ม" />
+
+                                <EditText
+                                    android:id="@+id/edtEndDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="วันที่เริ่ม" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="2"
+                    app:layout_constraintTop_toBottomOf="@+id/constan1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:paddingRight="10dp"
+                        android:text="จำนวนเงิน"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSalary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2000"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/edtNextSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="บันทึก"
+                    android:textAlignment="center"
+                    android:background="@drawable/button_box"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linSalary" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>

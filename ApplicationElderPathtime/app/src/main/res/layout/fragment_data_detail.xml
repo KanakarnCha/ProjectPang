@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.WorkDetailFragment">
+
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เลขออเดอร์ :"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOrderNumber"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/linear1"
+            android:id="@+id/linear2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="20sp"
+                android:textAlignment="textEnd"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="ชื่อผู้เรียก :"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCardName"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="คณากานต์ เจริญเรืองสกุล"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/linear2"
+            android:id="@+id/linear3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="20sp"
+                android:textAlignment="textEnd"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="เบอร์มือถือ :"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCardPhone"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0999999999"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/linear3"
+            android:id="@+id/linear4"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="20sp"
+                android:textAlignment="textEnd"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="สถานที่เริ่มต้น :"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCardStartLocation"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="9555555555555555555555555555555555555555555555555555"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear4">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="รายระเอียดเพิ่มเติม :"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCardDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20sp"
+                android:padding="10sp"
+                android:text="9555555555555555555555555555555555555555555555555555"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/linear7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear6">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/button_box"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/btnMatch"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="รับงาน"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

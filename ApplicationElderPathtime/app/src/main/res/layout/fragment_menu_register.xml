@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MenuRegisterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_box"
+            android:id="@+id/btnRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="49dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:text="สมัครสมาชิกผู้เรียก"
+            app:layout_constraintBottom_toTopOf="@+id/btnRegisterPathTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegisterPathTime"
+            android:background="@drawable/button_box"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="สมัครสมาชิกผู้หางาน"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegisterUser" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

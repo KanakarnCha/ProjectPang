@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    android:label="รายละเอียดงาน"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.applicationelderpathtime.fragment.LoginFragment"
+        android:label="เข้าสู่ระบบ"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/menuRegisterFragment"
+        android:name="com.example.applicationelderpathtime.fragment.MenuRegisterFragment"
+        android:label="เมนูสมัครสมาชิก"
+        tools:layout="@layout/fragment_menu_register" />
+    <fragment
+        android:id="@+id/registerPathTimeFragment"
+        android:name="com.example.applicationelderpathtime.fragment.RegisterPathTimeFragment"
+        android:label="สมัครสมาชิก" />
+    <fragment
+        android:id="@+id/registerUserFragment"
+        android:name="com.example.applicationelderpathtime.fragment.RegisterUserFragment"
+        android:label="สมัครสมาชิก"
+        tools:layout="@layout/fragment_register_user" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.applicationelderpathtime.fragment.HomeFragment"
+        android:label="หน้าหลัก"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/createWorkFragment"
+        android:name="com.example.applicationelderpathtime.fragment.CreateWorkFragment"
+        android:label="เพิ่มรายการ"
+        tools:layout="@layout/fragment_create_work" />
+    <fragment
+        android:id="@+id/workAddDateFragment"
+        android:name="com.example.applicationelderpathtime.fragment.WorkAddDateFragment"
+        android:label="เพิ่มวันที่"
+        tools:layout="@layout/fragment_work_add_date" />
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.applicationelderpathtime.fragment.SummaryFragment"
+        android:label="สรุปรายการ"
+        tools:layout="@layout/fragment_summary" />
+    <fragment
+        android:id="@+id/workAllUserFragment"
+        android:name="com.example.applicationelderpathtime.fragment.WorkAllUserFragment"
+        android:label="งานทั้งหมด"
+        tools:layout="@layout/fragment_work_all_user" />
+    <fragment
+        android:id="@+id/workDetailFragment"
+        android:name="com.example.applicationelderpathtime.fragment.WorkDetailFragment"
+        android:label="รายละเอียดงาน"
+        tools:layout="@layout/fragment_data_detail" />
+    <fragment
+        android:id="@+id/workActiveFragment"
+        android:name="com.example.applicationelderpathtime.fragment.WorkActiveFragment"
+        android:label="งานที่กำลังรับ"
+        tools:layout="@layout/fragment_work_active" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.applicationelderpathtime.fragment.ProfileFragment"
+        android:label="โปรไฟล์"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/uploadImageProfileFragment"
+        android:name="com.example.applicationelderpathtime.fragment.UploadImageProfileFragment"
+        android:label="อัพโหลดโปรไฟล์"
+        tools:layout="@layout/fragment_upload_image_profile" />
+</navigation>
